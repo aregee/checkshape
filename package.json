@@ -1,9 +1,9 @@
 {
   "name": "checkshape",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "check shapes of data in an async manner",
   "repository": "https://github.com/fractaltech/checkshape",
-  "main": "lib/Shape.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean && babel src/ --out-dir lib/",
