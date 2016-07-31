@@ -68,8 +68,8 @@ class Shape {
         }
       })
     )
-    .then((errors) => errors.filter(({error}) => {
-      return isArray(error) ? error.length > 0 : error;
+    .then((results) => results.filter(({result}) => {
+      return result !== true;
     }))
     .then((errors) => {
       if (errors.length === 0) {
