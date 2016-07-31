@@ -1,6 +1,6 @@
 {
   "name": "checkshape",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "check shapes of data in an async manner",
   "repository": "https://github.com/fractaltech/checkshape",
   "main": "lib/index.js",
