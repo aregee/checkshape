@@ -68,14 +68,11 @@ class Shape {
         }
       })
     )
-    .then((results) => results.filter(({result}) => {
-      return result !== true;
-    }))
-    .then((errors) => {
-      if (errors.length === 0) {
+    .then((checks) => {
+      if (checks.filter(({result}) => result !== true).length === 0) {
         return null;
       } else {
-        return errors.reduce((all, {key, result}) => {
+        return checks.reduce((all, {key, result}) => {
           return assign(all, {
             [key]: isUsableObject(result) ? toPlainObject(result) : result
           });
