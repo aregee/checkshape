@@ -85,7 +85,7 @@ class Shape {
   }
 
   check(input={}) {
-    return this.errors(input).then((errors) => ({result: !!errors, errors}));
+    return this.errors(input).then((errors) => ({result: !errors, errors}));
   }
 }
 
